@@ -9,15 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBAction func digit(_ sender: UIButton) {
         if let digitPressed = sender.currentTitle {
-            
+            display.text! += digitPressed
         }
-        print("Pressed \(digitPressed) digit")
+        
     }
     
     @IBOutlet weak var display: UILabel!
-
+    
 }
 
